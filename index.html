@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>北京联合大学旅游学院</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.popeasy.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div id="header" class="h_height">
+        <!-- 宽度1200px -->
+        <div id="hd_contain">
+            <!-- logo 登录信息 -->
+            <div id="hd_top">
+                <div class="clearfix">
+                    <div class="hd_logo fl">
+                    </div>
+                    <div class="hd_user fr"><a id="btn_login" href="javascript:;" class="btn btn_small">登录</a></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- 底部区域 -->
+    <div id="footer">
+        <div id="classify_box" class="clearfix">
+            <dl class="classify_item fl">
+                <dt>教学服务</dt>
+                <dd><a href="#">教学计划 大纲</a></dd>
+                <dd><a href="#">培养方案</a></dd>
+                <dd><a href="#">教学课件</a></dd>
+                <dd><a href="#">教材</a></dd>
+                <dd><a href="#">教学参考</a></dd>
+                <dd><a href="#">试题库</a></dd>
+                <dd><a href="#">毕业论文</a></dd>
+            </dl>
+            <dl class="classify_item fl">
+                <dt>科研服务</dt>
+                <dd><a href="#">会议资料</a></dd>
+                <dd><a href="#">论文</a></dd>
+                <dd><a href="#">地方文献</a></dd>
+                <dd><a href="#">旅游规划</a></dd>
+                <dd><a href="#">政府文件</a></dd>
+                <dd><a href="#">年鉴</a></dd>
+                <dd><a href="#">皮书</a></dd>
+                <dd><a href="#">国家和地方标准</a></dd>
+                <dd><a href="#">项目成果</a></dd>
+            </dl>
+            <dl class="classify_item fl classsify_two">
+                <dt>数据库</dt>
+                <dd><a href="#">旅游行业国家标准全文数据库</a></dd>
+                <dd><a href="#">中国旅游出版社共建数据库</a></dd>
+                <dd><a href="#">EPS数据平台</a></dd>
+                <dd><a href="#">中国科学引文数据库（CSCD）</a></dd>
+                <dd><a href="#">中文社会科学引文索引(CSSCI)</a></dd>
+                <dd><a href="#">Web of Science (SCIE/SSCI) 数据库</a></dd>
+            </dl>
+            <dl class="classify_item fl">
+                <dt>&nbsp;</dt>
+                <dd><a href="#">Wiley Online Library在线资源平台</a></dd>
+                <dd><a href="#">中国知网（CNKI）</a></dd>
+                <dd><a href="#">《人大复印报刊资料》全文数据库</a></dd>
+                <dd><a href="#">维普中文科技期刊全文数据库</a></dd>
+                <dd><a href="#">万方数据知识服务平台</a></dd>
+                <dd><a href="#">国务院发展研究中心信息网（教育版）</a></dd>
+            </dl>
+            <dl class="classify_item fl">
+                <dt>期刊</dt>
+                <dd><a href="#">国际期刊</a></dd>
+                <dd><a href="#">国内期刊</a></dd>
+                <dd><a href="#">馆藏图书</a></dd>
+                <dd><a href="#">国家哲学社会科学学术期刊数据库</a></dd>
+                <dd><a href="#">龙源电子期刊阅览室</a></dd>
+            </dl>
+            <dl class="classify_item fl last">
+                <dt>视频</dt>
+                <dd><a href="#">教学视频</a></dd>
+                <dd><a href="#">讲座视频</a></dd>
+                <dd><a href="#">答辩视频</a></dd>
+                <dd><a href="#">会议视频</a></dd>
+                <dd><a href="#">沙龙视频</a></dd>
+            </dl>
+        </div>
+    </div>
+    <!-- 登录弹框 -->
+    <div class="overlay"></div>
+    <div id="pop_login" class="modal">
+        <form action="#" method="post" id="myForm">
+            <p class="username c_grey">账号</p>
+            <input type="text" id="username" name="username" value="">
+            <p class="password c_grey">密码</p>
+            <input type="password" id="password" name="password" value="">
+            <div class="text_c"><button type="submit" id="btn_submit">登录</button></div>
+        </form>
+        <div class="pop_footer clearfix">
+            <a href="#" class="fl c_grey">忘记密码</a>
+            <a href="#" class="closeBtn fr c_grey">取消</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+    (function($){
+        $('#hd_main').mySilder({
+            width:390, //容器的宽度 必选参数!!!!!!
+            height:240, //容器的高度 必选参数!!!!!!
+            auto:true,//是否自动滚动
+            autoTime:5, //自动滚动时，时间间隙，即多长滚动一次,单位(秒)
+            direction:'x',//滚动方向,默认X方向
+            autoType:'left', //滚动方向，auto为true时生效
+            few:3,//一次滚动几个，默认滚动1张
+            showFew:3, //显示几个,就不用调css了,默认显示一个
+            clearance:15, //容器之间的间隙，默认为 0
+            silderMode:'easeInOutExpo', //滚动方式
+            timeGap:650,//动画间隙，完成一次动画需要多长时间，默认700ms
+            // buttonPre:'.silder-button.btl',//上一个，按钮
+            // buttonNext:'.silder-button.btr',//下一个，按钮
+            jz:true //点击时，是否等待动画完成
+            // runEnd:function(){//回调函数
+            // }
+        });
+    })(jQuery);
+    </script>
+</body>
+</html>
